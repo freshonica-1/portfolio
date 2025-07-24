@@ -1,0 +1,978 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="zxx">
+<head>
+<meta charset="utf-8"/>
+<meta content="Ashekur Rahman" name="author"/>
+<meta content="" name="description"/>
+<meta content="HTML,CSS,XML,JavaScript" name="keywords"/>
+<meta content="ie=edge" http-equiv="x-ua-compatible"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<!-- Title -->
+<title>Jupiter | HTML OnePage Template</title>
+<!-- Place favicon.ico in the root directory -->
+<link href="assets/images/pavicon.png" rel="apple-touch-icon"/>
+<link href="assets/images/pavicon.png" rel="shortcut icon" type="image/ico"/>
+<!-- Plugin-CSS -->
+<link href="assets/css/normalize.css" rel="stylesheet"/>
+<link href="assets/css/bootstrap-min.css" rel="stylesheet"/>
+<link href="assets/css/owl-carousel-min.css" rel="stylesheet"/>
+<link href="assets/css/lity-min.css" rel="stylesheet"/>
+<link href="assets/css/font-awesome-min.css" rel="stylesheet"/>
+<link href="assets/css/animate.css" rel="stylesheet"/>
+<!-- Main-Stylesheets -->
+<link href="assets/css/helper.css" rel="stylesheet"/>
+<link href="assets/css/theme.css" rel="stylesheet"/>
+<link href="style.css" rel="stylesheet"/>
+<link href="assets/css/responsive.css" rel="stylesheet">
+<script src="assets/js/vendor/modernizr-2-8-3-min.js"></script>
+<!--[if lt IE 9]>
+        <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet"/>
+<style>
+  body {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+  }
+  .bttn-4 {
+    transition: all 0.3s ease;
+    background-color: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+  }
+  .bttn-4:hover {
+    background-color: linear-gradient(135deg, #5a67d8, #6b46c1);
+    color: #fff;
+  }
+  .preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+  }
+  .preloader svg {
+    width: 60px;
+    height: 60px;
+  }
+.header-area.v2 {
+  background-image: url('assets/images/abstract-blurred-gradient-mesh-background.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.footer-area.v2 {
+  background-image: url('assets/images/abstract-blurred-gradient-mesh-background.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+@media (max-width: 767px) {
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  .product-slide.v2,
+  .owl-carousel {
+    max-width: 100% !important;
+    overflow-x: hidden;
+  }
+}
+
+</style>
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+  .section-padding {
+    padding: 40px 0 !important;
+  }
+  .section-padding-top {
+    padding-top: 40px !important;
+  }
+  .space-60, .space-40, .space-30 {
+    height: 20px !important;
+  }
+  
+@media (max-width: 767px) {
+  .angle-1::before,
+  .angle-1::after,
+  .topshapewrap,
+  .topshape {
+    display: none !important;
+  }
+}
+
+</style>
+</link><style>
+.product-card img {
+  transition: transform 0.3s ease;
+}
+.product-card:hover img {
+  transform: scale(1.05);
+}
+</style><style>
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.grid-item {
+  display: block !important;
+  width: calc(25% - 20px); /* 4 items per row with gap */
+}
+@media (max-width: 768px) {
+  .grid-item {
+    width: calc(50% - 20px); /* 2 per row on tablets */
+  }
+}
+@media (max-width: 480px) {
+  .grid-item {
+    width: 100%; /* full width on mobile */
+  }
+}
+</style><style>
+/* Owl carousel arrows styling */
+.owl-nav {
+  position: absolute;
+  top: 35%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  pointer-events: none;
+}
+.owl-nav button {
+  background-color: #3cb878;
+  color: white;
+  font-size: 22px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: none;
+  pointer-events: all;
+  transition: transform 0.3s ease;
+}
+.owl-nav button:hover {
+  transform: scale(1.15);
+  background-color: #2ca066;
+}
+.owl-nav button span {
+  display: block;
+  line-height: 42px;
+}
+
+/* Product card title styling */
+.product-card h4.title {
+  font-size: 16px;
+  margin-top: 10px;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+}
+</style><style>
+/* Replace default text with arrows using font content */
+.owl-nav button.owl-prev:before {
+  content: '‹';
+}
+.owl-nav button.owl-next:before {
+  content: '›';
+}
+
+/* Hide default span inside buttons */
+.owl-nav button span {
+  display: none;
+}
+
+/* Style the navigation arrows */
+.owl-nav {
+  position: absolute;
+  top: 35%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  pointer-events: none;
+}
+.owl-nav button {
+  background-color: #3cb878;
+  color: white;
+  font-size: 28px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
+  pointer-events: all;
+  transition: transform 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.owl-nav button:hover {
+  transform: scale(1.15);
+  background-color: #2ca066;
+}
+</style><style>
+.nav-control {
+  text-align: center;
+  margin-top: 20px;
+}
+.nav-control .control {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: #3cb878;
+  margin: 0 10px;
+  border-radius: 50%;
+  position: relative;
+  text-decoration: none;
+}
+.nav-control .control:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid white;
+  border-right: 2px solid white;
+  transform: translate(-50%, -50%) rotate(135deg);
+}
+.nav-control .custom-nav-right.control:before {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+</style><style>
+.owl-dots {
+  text-align: center;
+  margin-top: 20px;
+}
+.owl-dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+  background: #ccc;
+  border-radius: 50%;
+  transition: background 0.3s ease;
+}
+.owl-dot.active {
+  background: #3cb878;
+}
+</style><style>
+.banner-area {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+@media (max-width: 767px) {
+  .banner-area {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-size: contain;
+  }
+}
+</style><style>
+.product-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+</style></head>
+<body data-spy="scroll" data-target=".mainmenu-area">
+<!-- Preloader-Content -->
+<!-- Preloader -->
+<div class="preloader">
+<svg viewbox="0 0 100 100">
+<circle cx="50" cy="50" fill="none" r="40" stroke="#3cb878" stroke-dasharray="200" stroke-dashoffset="200" stroke-width="4">
+<animate attributename="stroke-dashoffset" dur="2s" repeatcount="indefinite" values="200;0"></animate>
+</circle>
+</svg>
+</div>
+<div class="preloader">
+<svg viewbox="-2000 -1000 4000 2000">
+<path d="M354-354A500 500 0 1 1 354 354L-354-354A500 500 0 1 0-354 354z" id="inf"></path>
+<use stroke-dasharray="1570 5143" stroke-dashoffset="6713px" xlink:href="#inf"></use>
+</svg>
+</div>
+<!-- Mainmenu-area-Start -->
+<div class="mainmenu-area transparent v2" data-offset-top="197" data-spy="affix">
+<div class="container">
+<div class="row">
+<div class="col-xs-12 row-flex">
+<div class="site-brand">
+<img src="assets/images/freshonica-logo.png" width="150px"/>
+</div>
+<button class="burger">
+<span class="bar"></span>
+<span class="bar"></span>
+<span class="bar"></span>
+</button>
+<div class="mainmenu">
+<ul class="nav"><li><a href="#home-area">Home</a></li><li><a href="#about-area">About</a></li><li><a href="#gallery-area">Products</a></li><li><a href="#gallery-area">Gallery</a></li><li><a href="#contact-area">Contact Us</a></li></ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Mainmenu-Area-End -->
+<!-- Header-Area -->
+<header class="header-area v2 angle-1" id="home-area">
+<div class="container">
+<div class="row row-flex">
+<div class="col-xs-12 col-md-7">
+<div class="text-box text-white">
+<h2 class="title">Life's fresh <br/> with <img class="banner-logo" src="assets/images/Freshonica-Banner.webp"/></h2>
+<p>Refreshing flavours for every moment!</p>
+<div class="space-30"></div>
+<a class="bttn-4" href="#gallery-area">Discover Now</a>
+</div>
+</div>
+<div class="col-xs-12 col-md-5 text-right section-bg" style="background-image: url('assets/images/circle-bg-2.png'); background-size: 100% auto">
+<div class="space-60 hidden-md hidden-lg"></div>
+<div class="product-single-slider wow zoomIn">
+<div class="item">
+<img alt="" src="assets/images/banner/Freshonica-elderflower.webp"/>
+</div>
+<div class="item">
+<img alt="" src="assets/images/banner/Freshonica-spiced jamun.webp"/>
+</div>
+<div class="item">
+<img alt="" src="assets/images/banner/Freshonica-agave.webp"/>
+</div>
+<div class="item">
+<img alt="" src="assets/images/banner/Freshonica-Passion Fruit.webp"/>
+</div>
+<div class="item">
+<img alt="" src="assets/images/banner/Freshonica-mojito.webp"/>
+</div>
+<div class="item">
+<img alt="" src="assets/images/banner/Freshonica-Green Apple.webp"/>
+</div>
+<div class="item">
+<img alt="" src="assets/images/banner/Freshonica-Blue Curacao.webp"/>
+</div>
+<div class="item">
+<img alt="" src="assets/images/banner/Freshonica-Coffee.webp"/>
+</div>
+<div class="item">
+<img alt="" src="assets/images/banner/Freshonica-juicy mango.webp"/>
+</div>
+<div class="item">
+<img alt="" src="assets/images/banner/Freshonica-lemon ice tea.webp"/>
+</div>
+<div class="item">
+<img alt="" src="assets/images/banner/Freshonica-lemon rancho.webp"/>
+</div>
+<div class="item">
+<img alt="" src="assets/images/banner/Freshonica-peach ice tea.webp"/>
+</div>
+<div class="item">
+<img alt="" src="assets/images/banner/Freshonica-ruby rose.webp"/>
+</div>
+<div class="item">
+<img alt="" src="assets/images/banner/Freshonica-strawberry.webp"/>
+</div>
+<div class="item">
+<img alt="" src="assets/images/banner/Freshonica-tangy orange.webp"/>
+</div>
+<div class="item">
+<img alt="" src="assets/images/banner/Freshonica-triple sec.webp"/>
+</div>
+<div class="item">
+<img alt="" src="assets/images/banner/Freshonica-watermelon.webp"/>
+</div>
+<div class="item">
+<img alt="" src="assets/images/banner/Freshonica-Great Grenadine.webp"/>
+</div>
+<div class="item">
+<img alt="" src="assets/images/banner/Freshonica-Juicy Peach.webp"/>
+</div>
+<div class="item">
+<img alt="" src="assets/images/banner/Freshonica-Lemon n Lime.webp"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="topshapewrap">
+<div class="topshape"></div>
+</div>
+</header>
+<!-- Header-Area-End -->
+<section class="intro-area v2 section-padding circle-bg relative-box" id="about-area" style="background-image: url('assets/images/Freshonica-About\ us.webp'),url('assets/images/circle-bg.png');background-position: right 58vw top 20vh, right 58vw bottom 10vh, right 60vw center;">
+<div class="container">
+<div class="row row-flex">
+<div class="col-xs-12 col-md-6 col-md-offset-6">
+<div class="text-box">
+<div class="box-icon v2">
+<i class="fa fa-glass"></i>
+</div>
+<h2 class="title" style="font-size: 28px; line-height: 1.4;">About Us</h2>
+<p>At FRESHONICA, we believe that every moment deserves a fresh and vibrant experience. Our passion is to craft premium, non-alcoholic bar syrups that elevate the ordinary into extraordinary. Whether you're a mixologist at home or a professional barista, FRESHONICA brings the freshness of real fruits and unique flavours straight to your glass.
+                            
+                            </p>
+<div class="space-30"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="feature-area v2 section-padding" id="service-area">
+<div class="container">
+<div class="row">
+<div class="col-xs-12 col-md-6 col-md-offset-3">
+<div class="text-box text-center">
+<div class="box-icon v2">
+<i aria-hidden="true" class="fa fa-gg"></i>
+</div>
+<h2 class="title">Why Choose <img src="assets/images/Freshonica.webp" width="230px"/></h2>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-3">
+<div class="feature-box v2 wow fadeInLeft" data-wow-delay="0.3s">
+<div class="box-icon">
+<i class="fa fa-pencil"></i>
+</div>
+<h3 class="title">Rich and Flavourful</h3>
+<p class="desc">Carefully crafted to deliver an intense, authentic taste with every sip.</p>
+</div>
+</div>
+<div class="col-xs-12 col-sm-6 col-md-3">
+<div class="feature-box v3 wow fadeInLeft" data-wow-delay="0.5s">
+<div class="box-icon">
+<i class="fa fa-cloud"></i>
+</div>
+<h3 class="title">High-Quality Ingredients</h3>
+<p class="desc">Premium ingredients to ensure each bottle meets high standards.</p>
+</div>
+</div>
+<div class="col-xs-12 col-sm-6 col-md-3">
+<div class="feature-box v4 wow fadeInLeft" data-wow-delay="0.7s">
+<div class="box-icon">
+<i class="fa fa-crop"></i>
+</div>
+<h3 class="title">Versatile <br/>Use</h3>
+<p class="desc">Ideal for mocktails, cocktails, and a variety of creative beverages.</p>
+</div>
+</div>
+<div class="col-xs-12 col-sm-6 col-md-3">
+<div class="feature-box v5 wow fadeInLeft" data-wow-delay="0.9s">
+<div class="box-icon">
+<i class="fa fa-database"></i>
+</div>
+<h3 class="title">Great for All Settings</h3>
+<p class="desc">Perfectly suited for both home use and professional establishments.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- <section class="product-area v2 angle-3">
+        
+        <div class="container">
+            <div class="product-slider-2">
+                <div class="row row-flex">
+                    <div class="col-xs-12 col-md-6">
+                        <div class="text-box text-white">
+                            <h2 class="title">Apple Watch 3 Special Edition</h2>
+                            <p class="desc">Vestibulum commodo sapien non elit porttitor, vitae volutpat nibh mollis. Nulla porta risus id neque tempor, in efficitur justo imperdiet. Etiam a ex at ante tincidunt imperdiet.</p>
+                            <div class="space-30"></div>
+                            <a href="#" class="bttn-4">Buy It Now</a>
+                            <div class="space-30"></div>
+                            <div class="title"><small>Only</small> $99</div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-5 col-md-offset-1">
+                        <figure class="single-image">
+                            <img src="assets/images/w1.png" alt="">
+                        </figure>
+                    </div>
+                </div>
+                <div class="row row-flex">
+                    <div class="col-xs-12 col-md-6">
+                        <div class="text-box text-white">
+                            <h2 class="title">Apple Watch 3 Special Edition</h2>
+                            <p class="desc">Vestibulum commodo sapien non elit porttitor, vitae volutpat nibh mollis. Nulla porta risus id neque tempor, in efficitur justo imperdiet. Etiam a ex at ante tincidunt imperdiet.</p>
+                            <div class="space-30"></div>
+                            <a href="#" class="bttn-4">Buy It Now</a>
+                            <div class="space-30"></div>
+                            <div class="title"><small>Only</small> $99</div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-5 col-md-offset-1">
+                        <figure class="single-image">
+                            <img src="assets/images/w2.png" alt="">
+                        </figure>
+                    </div>
+                </div>
+                <div class="row row-flex">
+                    <div class="col-xs-12 col-md-6">
+                        <div class="text-box text-white">
+                            <h2 class="title">Apple Watch 3 Special Edition</h2>
+                            <p class="desc">Vestibulum commodo sapien non elit porttitor, vitae volutpat nibh mollis. Nulla porta risus id neque tempor, in efficitur justo imperdiet. Etiam a ex at ante tincidunt imperdiet.</p>
+                            <div class="space-30"></div>
+                            <a href="#" class="bttn-4">Buy It Now</a>
+                            <div class="space-30"></div>
+                            <div class="title"><small>Only</small> $99</div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-5 col-md-offset-1">
+                        <figure class="single-image">
+                            <img src="assets/images/w3.png" alt="">
+                        </figure>
+                    </div>
+                </div>
+                <div class="row row-flex">
+                    <div class="col-xs-12 col-md-6">
+                        <div class="text-box text-white">
+                            <h2 class="title">Apple Watch 3 Special Edition</h2>
+                            <p class="desc">Vestibulum commodo sapien non elit porttitor, vitae volutpat nibh mollis. Nulla porta risus id neque tempor, in efficitur justo imperdiet. Etiam a ex at ante tincidunt imperdiet.</p>
+                            <div class="space-30"></div>
+                            <a href="#" class="bttn-4">Buy It Now</a>
+                            <div class="space-30"></div>
+                            <div class="title"><small>Only</small> $99</div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-5 col-md-offset-1">
+                        <figure class="single-image">
+                            <img src="assets/images/w4.png" alt="">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="productShape1">
+            <div class="productShape1inner">
+                
+            </div>
+        </div>
+        <div class="productShape2">
+            <div class="productShape2inner">
+                
+            </div>
+        </div>
+    </section> -->
+<section class="section-padding-top product-grid-area v2" id="gallery-area">
+<div class="container">
+<div class="text-box text-center">
+<div class="box-icon v2">
+<i aria-hidden="true" class="fa fa-codepen"></i>
+</div>
+<h2 class="title">Our Products</h2>
+<div class="space-30"></div>
+</div>
+<div class="owl-carousel product-carousel">
+<!-- Fruity Flavours -->
+<div class=""><div class="product-card" style="display: flex; flex-direction: column; align-items: center; text-align: center; padding: 15px;"><img alt="Watermelon" src="assets/images/banner/Freshonica-watermelon.webp" style="max-height: 300px; width: 100%; object-fit: contain; margin-bottom: 10px;"/><h4 class="title text-center">Watermelon</h4></div></div>
+<div class=""><div class="product-card" style="display: flex; flex-direction: column; align-items: center; text-align: center; padding: 15px;"><img alt="Tangy Orange" src="assets/images/banner/Freshonica-tangy orange.webp" style="max-height: 300px; width: 100%; object-fit: contain; margin-bottom: 10px;"/><h4 class="title text-center">Tangy Orange</h4></div></div>
+<div class=""><div class="product-card" style="display: flex; flex-direction: column; align-items: center; text-align: center; padding: 15px;"><img alt="Ruby Rose" src="assets/images/banner/Freshonica-ruby rose.webp" style="max-height: 300px; width: 100%; object-fit: contain; margin-bottom: 10px;"/><h4 class="title text-center">Ruby Rose</h4></div></div>
+<div class=""><div class="product-card" style="display: flex; flex-direction: column; align-items: center; text-align: center; padding: 15px;"><img alt="Strawberry" src="assets/images/banner/Freshonica-strawberry.webp" style="max-height: 300px; width: 100%; object-fit: contain; margin-bottom: 10px;"/><h4 class="title text-center">Strawberry</h4></div></div>
+<div class=""><div class="product-card" style="display: flex; flex-direction: column; align-items: center; text-align: center; padding: 15px;"><img alt="Juicy Peach" src="assets/images/banner/Freshonica-Juicy Peach.webp" style="max-height: 300px; width: 100%; object-fit: contain; margin-bottom: 10px;"/><h4 class="title text-center">Juicy Peach</h4></div></div>
+<div class=""><div class="product-card" style="display: flex; flex-direction: column; align-items: center; text-align: center; padding: 15px;"><img alt="Green Apple" src="assets/images/banner/Freshonica-Green Apple.webp" style="max-height: 300px; width: 100%; object-fit: contain; margin-bottom: 10px;"/><h4 class="title text-center">Green Apple</h4></div></div>
+<div class=""><div class="product-card" style="display: flex; flex-direction: column; align-items: center; text-align: center; padding: 15px;"><img alt="Passion Fruit" src="assets/images/banner/Freshonica-Passion Fruit.webp" style="max-height: 300px; width: 100%; object-fit: contain; margin-bottom: 10px;"/><h4 class="title text-center">Passion Fruit</h4></div></div>
+<div class=""><div class="product-card" style="display: flex; flex-direction: column; align-items: center; text-align: center; padding: 15px;"><img alt="Tropical Pineapple" src="assets/images/banner/Freshonica-pineapple.webp" style="max-height: 300px; width: 100%; object-fit: contain; margin-bottom: 10px;"/><h4 class="title text-center">Tropical Pineapple</h4></div></div>
+<div class=""><div class="product-card" style="display: flex; flex-direction: column; align-items: center; text-align: center; padding: 15px;"><img alt="Juicy Mango" src="assets/images/banner/Freshonica-juicy mango.webp" style="max-height: 300px; width: 100%; object-fit: contain; margin-bottom: 10px;"/><h4 class="title text-center">Juicy Mango</h4></div></div>
+<div class=""><div class="product-card" style="display: flex; flex-direction: column; align-items: center; text-align: center; padding: 15px;"><img alt="Lemon Rancho" src="assets/images/banner/Freshonica-lemon rancho.webp" style="max-height: 300px; width: 100%; object-fit: contain; margin-bottom: 10px;"/><h4 class="title text-center">Lemon Rancho</h4></div></div>
+<!-- Minty -->
+<div class=""><div class="product-card" style="display: flex; flex-direction: column; align-items: center; text-align: center; padding: 15px;"><img alt="Mint Mojito" src="assets/images/banner/Freshonica-mojito.webp" style="max-height: 300px; width: 100%; object-fit: contain; margin-bottom: 10px;"/><h4 class="title text-center">Mint Mojito</h4></div></div>
+<!-- Ice Teas -->
+<div class=""><div class="product-card" style="display: flex; flex-direction: column; align-items: center; text-align: center; padding: 15px;"><img alt="Lemon Ice Tea" src="assets/images/banner/Freshonica-lemon ice tea.webp" style="max-height: 300px; width: 100%; object-fit: contain; margin-bottom: 10px;"/><h4 class="title text-center">Lemon Ice Tea</h4></div></div>
+<div class=""><div class="product-card" style="display: flex; flex-direction: column; align-items: center; text-align: center; padding: 15px;"><img alt="Peach Ice Tea" src="assets/images/banner/Freshonica-peach ice tea.webp" style="max-height: 300px; width: 100%; object-fit: contain; margin-bottom: 10px;"/><h4 class="title text-center">Peach Ice Tea</h4></div></div>
+<!-- Signature Flavours -->
+<div class=""><div class="product-card" style="display: flex; flex-direction: column; align-items: center; text-align: center; padding: 15px;"><img alt="Great Grenadine" src="assets/images/banner/Freshonica-Great Grenadine.webp" style="max-height: 300px; width: 100%; object-fit: contain; margin-bottom: 10px;"/><h4 class="title text-center">Great Grenadine</h4></div></div>
+<div class=""><div class="product-card" style="display: flex; flex-direction: column; align-items: center; text-align: center; padding: 15px;"><img alt="Lemon N Lime" src="assets/images/banner/Freshonica-Lemon n Lime.webp" style="max-height: 300px; width: 100%; object-fit: contain; margin-bottom: 10px;"/><h4 class="title text-center">Lemon N Lime</h4></div></div>
+<div class=""><div class="product-card" style="display: flex; flex-direction: column; align-items: center; text-align: center; padding: 15px;"><img alt="Elder Flower" src="assets/images/banner/Freshonica-elderflower.webp" style="max-height: 300px; width: 100%; object-fit: contain; margin-bottom: 10px;"/><h4 class="title text-center">Elder Flower</h4></div></div>
+<div class=""><div class="product-card" style="display: flex; flex-direction: column; align-items: center; text-align: center; padding: 15px;"><img alt="Spiced Jamun" src="assets/images/banner/Freshonica-spiced jamun.webp" style="max-height: 300px; width: 100%; object-fit: contain; margin-bottom: 10px;"/><h4 class="title text-center">Spiced Jamun</h4></div></div>
+<div class=""><div class="product-card" style="display: flex; flex-direction: column; align-items: center; text-align: center; padding: 15px;"><img alt="Golden Agave" src="assets/images/banner/Freshonica-agave.webp" style="max-height: 300px; width: 100%; object-fit: contain; margin-bottom: 10px;"/><h4 class="title text-center">Golden Agave</h4></div></div>
+<div class=""><div class="product-card" style="display: flex; flex-direction: column; align-items: center; text-align: center; padding: 15px;"><img alt="Blue Curacao" src="assets/images/banner/Freshonica-Blue Curacao.webp" style="max-height: 300px; width: 100%; object-fit: contain; margin-bottom: 10px;"/><h4 class="title text-center">Blue Curacao</h4></div></div>
+<div class=""><div class="product-card" style="display: flex; flex-direction: column; align-items: center; text-align: center; padding: 15px;"><img alt="Triple Sec" src="assets/images/banner/Freshonica-triple sec.webp" style="max-height: 300px; width: 100%; object-fit: contain; margin-bottom: 10px;"/><h4 class="title text-center">Triple Sec</h4></div></div>
+<div class=""><div class="product-card" style="display: flex; flex-direction: column; align-items: center; text-align: center; padding: 15px;"><img alt="Fruit Bear" src="assets/images/dummy.jpg" style="max-height: 300px; width: 100%; object-fit: contain; margin-bottom: 10px;"/><h4 class="title text-center">Fruit Bear</h4></div></div>
+<div class=""><div class="product-card" style="display: flex; flex-direction: column; align-items: center; text-align: center; padding: 15px;"><img alt="Irish Cream" src="assets/images/dummy.jpg" style="max-height: 300px; width: 100%; object-fit: contain; margin-bottom: 10px;"/><h4 class="title text-center">Irish Cream</h4></div></div>
+<div class=""><div class="product-card" style="display: flex; flex-direction: column; align-items: center; text-align: center; padding: 15px;"><img alt="Golden Hazelnut" src="assets/images/dummy.jpg" style="max-height: 300px; width: 100%; object-fit: contain; margin-bottom: 10px;"/><h4 class="title text-center">Golden Hazelnut</h4></div></div>
+<div class=""><div class="product-card" style="display: flex; flex-direction: column; align-items: center; text-align: center; padding: 15px;"><img alt="Lush Vanilla" src="assets/images/dummy.jpg" style="max-height: 300px; width: 100%; object-fit: contain; margin-bottom: 10px;"/><h4 class="title text-center">Lush Vanilla</h4></div></div>
+<div class=""><div class="product-card" style="display: flex; flex-direction: column; align-items: center; text-align: center; padding: 15px;"><img alt="Cafe Coffee" src="assets/images/banner/Freshonica-Coffee.webp" style="max-height: 300px; width: 100%; object-fit: contain; margin-bottom: 10px;"/><h4 class="title text-center">Cafe Coffee</h4></div></div>
+</div>
+</div>
+</section>
+<section class="testimonial-area v3 section-bg" id="testimonial-area" style="display: none;">
+<div class="container">
+<div class="row">
+<div class="col-xs-12 col-md-6 col-md-offset-3">
+<div class="text-box text-center">
+<div class="box-icon v3">
+<i aria-hidden="true" class="fa fa-bolt"></i>
+</div>
+<h2 class="title">Peoples always loves our products</h2>
+<div class="space-60"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="carousel slide testimonial-slider" id="testimonials">
+<div class="container">
+<div class="row">
+<!-- Wrapper for slides -->
+<div class="carousel-inner">
+<div class="item active">
+<div class="testimonail-item col-xs-12 col-md-8 col-md-offset-2">
+<div class="desc">Building a compelling and intuitive user experience is vital to being effective online. Ironpaper specializes in making online business systems and websites more user friendly and easy to navigate. 1 ?</div>
+<div class="testimonail-footer">
+<h5 class="title">David Clemons</h5>
+<div class="position">CEO, Hoper </div>
+</div>
+</div>
+</div>
+<div class="item">
+<div class="testimonail-item col-xs-12 col-md-8 col-md-offset-2">
+<div class="desc">Building a compelling and intuitive user experience is vital to being effective online. Ironpaper specializes in making online business systems and websites more user friendly and easy to navigate. 2 ?</div>
+<div class="testimonail-footer">
+<h5 class="title">David Clemons</h5>
+<div class="position">CEO, Hoper </div>
+</div>
+</div>
+</div>
+<div class="item">
+<div class="testimonail-item col-xs-12 col-md-8 col-md-offset-2">
+<div class="desc">Building a compelling and intuitive user experience is vital to being effective online. Ironpaper specializes in making online business systems and websites more user friendly and easy to navigate. 2 ?</div>
+<div class="testimonail-footer">
+<h5 class="title">David Clemons</h5>
+<div class="position">CEO, Hoper </div>
+</div>
+</div>
+</div>
+<div class="item">
+<div class="testimonail-item col-xs-12 col-md-8 col-md-offset-2">
+<div class="desc">Building a compelling and intuitive user experience is vital to being effective online. Ironpaper specializes in making online business systems and websites more user friendly and easy to navigate. 3 ?</div>
+<div class="testimonail-footer">
+<h5 class="title">David Clemons</h5>
+<div class="position">CEO, Hoper </div>
+</div>
+</div>
+</div>
+<div class="item">
+<div class="testimonail-item col-xs-12 col-md-8 col-md-offset-2">
+<div class="desc">Building a compelling and intuitive user experience is vital to being effective online. Ironpaper specializes in making online business systems and websites more user friendly and easy to navigate. 3 ?</div>
+<div class="testimonail-footer">
+<h5 class="title">David Clemons</h5>
+<div class="position">CEO, Hoper </div>
+</div>
+</div>
+</div>
+<div class="item">
+<div class="testimonail-item col-xs-12 col-md-8 col-md-offset-2">
+<div class="desc">Building a compelling and intuitive user experience is vital to being effective online. Ironpaper specializes in making online business systems and websites more user friendly and easy to navigate. 3 ?</div>
+<div class="testimonail-footer">
+<h5 class="title">David Clemons</h5>
+<div class="position">CEO, Hoper </div>
+</div>
+</div>
+</div>
+<div class="item">
+<div class="testimonail-item col-xs-12 col-md-8 col-md-offset-2">
+<div class="desc">Building a compelling and intuitive user experience is vital to being effective online. Ironpaper specializes in making online business systems and websites more user friendly and easy to navigate. 3 ?</div>
+<div class="testimonail-footer">
+<h5 class="title">David Clemons</h5>
+<div class="position">CEO, Hoper </div>
+</div>
+</div>
+</div>
+<div class="item">
+<div class="testimonail-item col-xs-12 col-md-8 col-md-offset-2">
+<div class="desc">Building a compelling and intuitive user experience is vital to being effective online. Ironpaper specializes in making online business systems and websites more user friendly and easy to navigate. 3 ?</div>
+<div class="testimonail-footer">
+<h5 class="title">David Clemons</h5>
+<div class="position">CEO, Hoper </div>
+</div>
+</div>
+</div>
+</div> <!-- Indicators -->
+</div>
+</div>
+<ol class="carousel-indicators">
+<li class="active" data-slide-to="0" data-target="#testimonials"><img alt="" src="assets/images/testimonial-1.png"/></li>
+<li data-slide-to="1" data-target="#testimonials"><img alt="" src="assets/images/testimonial-2.png"/></li>
+<li data-slide-to="2" data-target="#testimonials"><img alt="" src="assets/images/testimonial-3.png"/></li>
+<li data-slide-to="3" data-target="#testimonials"><img alt="" src="assets/images/testimonial-4.png"/></li>
+<li data-slide-to="4" data-target="#testimonials"><img alt="" src="assets/images/testimonial-5.png"/></li>
+<li data-slide-to="5" data-target="#testimonials"><img alt="" src="assets/images/testimonial-6.png"/></li>
+<li data-slide-to="6" data-target="#testimonials"><img alt="" src="assets/images/testimonial-7.png"/></li>
+<li data-slide-to="7" data-target="#testimonials"><img alt="" src="assets/images/testimonial-1.png"/></li>
+</ol>
+<!-- Left and right controls -->
+<div class="nav-control text-center">
+<a class="left control" data-slide="prev" href="#testimonials"></a>
+<a class="right control" data-slide="next" href="#testimonials"></a>
+</div>
+</div>
+</section><section class="section-padding-top intro-area n v1 over-hidden" id="about-area" style="background-image: url('assets/images/backgroundimage-freshonica.webp'); background-size: 100% 100%;background-position: center">
+<div class="container">
+<div class="row row-flex">
+<div class="col-xs-12 col-md-6">
+<div class="text-box text-white">
+<h4 class="top-title text-white">It All Begins with a Drop!</h4>
+<h2 class="title">Watch the spark of Freshonica take shape in our new logo reveal.<br/>  A drop that redefines freshness.</h2>
+<div class="space-40"></div>
+<a class="bttn-2" href="#">Watch the Reveal</a>
+</div>
+</div>
+<div class="col-xs-12 col-md-6 hidden-sm">
+<div class="space-60 hidden-md hidden-lg"></div>
+<div class="play-box">
+<figure class="play-image wow zoomIn">
+<img alt="" src="assets/images/intro-1.png"/>
+</figure>
+<a class="play-bttn" data-lity="" href="https://www.youtube.com/watch?v=Sn1jgITZf6o"><i class="fa fa-play"></i></a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Price-Area-End -->
+<section class="info-area v2 section-padding" id="contact-area">
+<div class="container">
+<div class="row">
+<div class="col-xs-12 col-md-6 col-md-offset-3">
+<div class="text-box text-center">
+<div class="box-icon v2">
+<i aria-hidden="true" class="fa fa-map-signs"></i>
+</div>
+<h2 class="title">Our Branches</h2>
+<div class="space-60"></div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-xs-12 col-sm-6">
+<div class="info-box wow fadeIn" data-wow-delay="0.3s">
+<div class="box-image">
+<img alt="" src="assets/images/india.webp" width="500px"/>
+</div>
+<div class="box-content">
+<h3 class="title">India</h3>
+<p class="desc">Head Office: 22/8 Shakti Nagar, Delhi-110007 
+Operations: 40/3 Km Milestone, Bahalgarh, Sonepat, Haryana</p>
+<h4 class="number">+91 8076950542</h4>
+</div>
+</div>
+</div>
+<div class="col-xs-12 col-sm-6">
+<div class="info-box wow fadeIn" data-wow-delay="0.5s">
+<div class="box-image">
+<img alt="" src="assets/images/australia.webp" width="500px"/>
+</div>
+<div class="box-content">
+<h3 class="title">Melbourne, Australia</h3>
+<p class="desc">11 Flockhart Street, Vic, Melbourne</p>
+<h4 class="number">+61 434963220</h4>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer-Area-Start -->
+<footer class="footer-area v2 section-bg angle-2">
+<div class="container">
+<div class="row">
+<div class="col-xs-12">
+<!-- Subscribe-Area-Start -->
+<div class="subscribe-area v2">
+<div class="row">
+<div class="col-xs-12 col-md-6 col-md-offset-3">
+<div class="text-box text-center">
+<div class="box-icon v2">
+<i aria-hidden="true" class="fa fa-space-shuttle"></i>
+</div>
+<h2 class="title" style="font-size: 24px; line-height: 1.5;">Stay in the loop with the latest launches, flavours, and our upcoming brand story in motion. Sign up and never miss a drop of Freshonica!</h2>
+<div class="space-60"></div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-xs-12">
+<form id="mc-form">
+<div class="subscribe-form">
+<input class="form-input" id="mc-email" name="email" placeholder="Your email" type="email"/>
+<button class="bttn-5 submit" type="submit">Notify Me!</button>
+<div class="info">*Your email address is safe with us. We never share your email address.</div>
+</div>
+<label class="mt10" for="mc-email"></label>
+</form>
+</div>
+</div>
+</div>
+<!-- Subscribe-Area-End -->
+</div>
+</div>
+</div>
+<div class="footer-bottom">
+<div class="container">
+<!-- Footer-Widget-Start -->
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-md-3">
+<div class="widget">
+<h4 class="widget-title">About Us</h4>
+<p>Freshonica is a celebration of flavour, freshness, and finesse. We craft refreshing beverages that bring joy to every drop.</p>
+</div>
+</div>
+<div class="col-xs-12 col-sm-6 col-md-3">
+<div class="widget">
+<h4 class="widget-title">Quick Link</h4>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">Features</a></li>
+<li><a href="#">Pricing</a></li>
+<li><a href="#">Team</a></li>
+<li><a href="#">Contact Us!</a></li>
+</ul>
+</div>
+</div>
+<div class="col-xs-12 col-sm-6 col-md-3">
+<div class="widget">
+<h4 class="widget-title">Support</h4>
+<ul>
+<li><a href="#">Privacy Policy</a></li>
+<li><a href="#">Terms</a></li>
+<li><a href="#">FAQ</a></li>
+<li><a href="#">Support</a></li>
+</ul>
+</div>
+</div>
+<div class="col-xs-12 col-sm-6 col-md-3">
+<div class="widget">
+<h4 class="widget-title">Social</h4>
+<p>Please connect with our social profiles.</p>
+<div class="space-30"></div>
+<div class="social-menu">
+<a href="#"><i class="fa fa-facebook"></i></a>
+<a href="#"><i class="fa fa-twitter"></i></a>
+<a href="#"><i class="fa fa-google-plus"></i></a>
+<a href="#"><i class="fa fa-linkedin"></i></a>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer-Widget-End -->
+</div>
+</div>
+<div class="copyright-area">
+<div class="container">
+<div class="row">
+<div class="col-xs-12 text-center">
+<span class="copyright">© 2025 Freshonica. All Rights Reserved</span>
+</div>
+</div>
+</div>
+</div>
+<div class="productShape1">
+<div class="productShape1inner">
+</div>
+</div>
+</footer>
+<!-- Footer-Area-End -->
+<!--Vendor-JS-->
+<script src="assets/js/vendor/jquery-1-12-4-min.js"></script>
+<!--Plugin-JS-->
+<script src="assets/js/vendor/bootstrap-min.js"></script>
+<script src="assets/js/owl-carousel-min.js"></script>
+<script src="assets/js/ajaxchimp.js"></script>
+<script src="assets/js/lity-min.js"></script>
+<script src="assets/js/click-effect.js"></script>
+<script src="assets/js/mouse-effect.js"></script>
+<script src="assets/js/scrollUp-min.js"></script>
+<script src="assets/js/wow-min.js"></script>
+<!--Main-active-JS-->
+<script src="assets/js/main.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    once: true
+  });
+  window.addEventListener('load', function () {
+    const loader = document.querySelector('.preloader');
+    if (loader) loader.style.display = 'none';
+  });
+</script>
+<!-- Isotope & Product Filtering Script -->
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script><script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script><script>
+document.addEventListener("DOMContentLoaded", function () {
+  var grid = document.querySelector('.grid');
+  if (!grid) return;
+
+  var iso = new Isotope(grid, {
+    itemSelector: '.grid-item',
+    layoutMode: 'fitRows'
+  });
+
+  var filtersElem = document.querySelector('#filters');
+  filtersElem.addEventListener('click', function (event) {
+    if (!event.target.matches('button')) return;
+
+    // Remove active class from all buttons
+    filtersElem.querySelectorAll('.btn').forEach(btn => btn.classList.remove('active'));
+
+    // Add active to clicked
+    event.target.classList.add('active');
+
+    // Filter
+    var filterValue = event.target.getAttribute('data-filter');
+    iso.arrange({ filter: filterValue });
+  });
+});
+</script><script>
+$(document).ready(function () {
+  $('.product-carousel').owlCarousel({
+    loop: true,
+    margin: 15,
+    nav: false,
+    dots: true,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    touchDrag: true,
+    mouseDrag: true,
+    responsive: {
+      0: { items: 1 },
+      480: { items: 2 },
+      768: { items: 3 },
+      992: { items: 3 }
+    }
+  });
+});
+</script><script>
+$(document).ready(function () {
+  $('.product-single-slider').owlCarousel({
+    items: 1,
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    animateOut: "fadeOut",
+    nav: false,
+    dots: false
+  });
+});
+</script></body>
+</html>
