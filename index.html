@@ -54,23 +54,7 @@
     background-color: linear-gradient(135deg, #5a67d8, #6b46c1);
     color: #fff;
   }
-  .preloader {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
-    background: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 9999;
-  }
-  .preloader svg {
-    width: 60px;
-    height: 60px;
-  }
-.header-area.v2 {
+  .header-area.v2 {
   background-image: url('assets/images/abstract-blurred-gradient-mesh-background.webp');
   background-size: cover;
   background-position: center;
@@ -302,19 +286,6 @@
 <body data-spy="scroll" data-target=".mainmenu-area">
 <!-- Preloader-Content -->
 <!-- Preloader -->
-<div class="preloader">
-<svg viewbox="0 0 100 100">
-<circle cx="50" cy="50" fill="none" r="40" stroke="#3cb878" stroke-dasharray="200" stroke-dashoffset="200" stroke-width="4">
-<animate attributename="stroke-dashoffset" dur="2s" repeatcount="indefinite" values="200;0"></animate>
-</circle>
-</svg>
-</div>
-<div class="preloader">
-<svg viewbox="-2000 -1000 4000 2000">
-<path d="M354-354A500 500 0 1 1 354 354L-354-354A500 500 0 1 0-354 354z" id="inf"></path>
-<use stroke-dasharray="1570 5143" stroke-dashoffset="6713px" xlink:href="#inf"></use>
-</svg>
-</div>
 <!-- Mainmenu-area-Start -->
 <div class="mainmenu-area transparent v2" data-offset-top="197" data-spy="affix">
 <div class="container">
@@ -912,11 +883,7 @@ Operations: 40/3 Km Milestone, Bahalgarh, Sonepat, Haryana</p>
     duration: 800,
     once: true
   });
-  window.addEventListener('load', function () {
-    const loader = document.querySelector('.preloader');
-    if (loader) loader.style.display = 'none';
-  });
-</script>
+  </script>
 <!-- Isotope & Product Filtering Script -->
 <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script><script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script><script>
 document.addEventListener("DOMContentLoaded", function () {
